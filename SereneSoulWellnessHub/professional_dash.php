@@ -369,12 +369,12 @@
             <img src="logo.png" alt="Logo" style="height: 80px; margin-bottom: 20px; margin-top: 0;">
         </div>
         <a class="active" href="professional_dash.php"><i class="fas fa-home"></i> Overview</a>
-        <li><a href="bookappointment.php"><i class="fas fa-calendar-alt"></i> Book Appointments</a></li>
+        <li><a href="manageappointment.php"><i class="fas fa-calendar-alt"></i> Manage Appointments</a></li>
         <li><a href="patients_to_attend.php"><i class="fas fa-user-md"></i> Patients to Attend</a></li>
-        <li><a href="Feedbacksupport.php"><i class="fas fa-comment-dots"></i> Patient Feedback</a></li>
+        <li><a href="userfeedback.php"><i class="fas fa-comment-dots"></i> Patient Feedback</a></li>
         <li><a href="my_profile.php"><i class="fas fa-user-edit"></i> Edit my profile</a></li>
-        <li><a href="News_and_Blog.php"><i class="fas fa-newspaper"></i> News and Blog</a></li>
-        <li><a href="doctor_logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        <li><a href="Blog&News.php"><i class="fas fa-newspaper"></i> News and Blog</a></li>
+        <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
     </div>
 
     <div class="dashboard">
@@ -387,7 +387,7 @@
             <img src="patients.png" alt="Patients" width="40%" style="border-radius: 20px; margin-bottom: 100 px;">
             <h1>Provide Professional Services</h1>
             <p>Offer your specialized services to those in need of wellness solutions.</p>
-            <button onclick="document.location='manage_appointments.php'">Manage Appointments</button>
+            <button onclick="document.location='manageappointments.php'">Manage Appointments</button>
         </div>
         <div class="activity-overview">
             <h2><a href="#">Report Overview</a></h2>

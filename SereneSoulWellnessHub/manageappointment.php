@@ -7,7 +7,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Manage Appointments | Natembea Online</title>
+  <title>Manage Appointments | SereneSoul Wellness</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -135,14 +135,13 @@ session_start();
     <div class="topnav-centered">
       <img src="Images/logo.jpg" alt="Logo" style="height: 80px; margin-bottom:20px; margin-top:0;">
     </div>
-    <a href="doctor_dashboard.php"><i class="fas fa-home"></i> Overview</a>
-    <a class="active" href="Manage_appointments.php"><i class="fas fa-calendar-alt"></i> Manage Appointments</a>
+    <a href="professional_dash.php"><i class="fas fa-home"></i> Overview</a>
+    <a class="active" href="manageappointments.php"><i class="fas fa-calendar-alt"></i> Manage Appointments</a>
     <a href="Patients_to_attend.php"><i class="fas fa-user-md"></i> Patients to Attend</a>
-    <a href="Patient_Records.php"><i class="fas fa-folder-open"></i> Patient Records</a>
     <a href="user_feedback.php"><i class="fas fa-comment-dots"></i> User Feedback</a>
     <a href="profiledoctor.php"><i class="fas fa-user-edit"></i> Edit my profile</a>
-    <a href="News_and_Blog.php"><i class="fas fa-newspaper"></i> News and Blog</a>
-    <a href="doctor_logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    <a href="Blog&News.php"><i class="fas fa-newspaper"></i> News and Blog</a>
+    <a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
   </div>
 
   <div class="main">
@@ -175,16 +174,17 @@ session_start();
             while($row = $result->fetch_assoc()) {
           ?>
           <tr>
-            <td><?php echo $row["FullName"]; ?></td>
-            <td><?php echo $row["EmailAddress"]; ?></td>
-            <td>$<?php echo $row["PhoneNumber"]; ?></td>
-            <td><?php echo $row["SelectedDoctor"]; ?></td>
-            <td><?php echo $row["ReasonForAppointment"]; ?></td>
-            <td><?php echo $row["AppointmentDate"]; ?></td>
-            <td><?php echo $row["AppointmentTime"]; ?></td>
-            <td>$<?php echo $row["CreatedAt"]; ?></td>
-            <td>
-              <form action="connection.php" method="get">
+          <td><?php echo $row["full_name"]; ?></td>
+          <td><?php echo $row["email_address"]; ?></td>
+          <td><?php echo $row["phone_number"]; ?></td>
+          <td><?php echo $row["SelectedProfessional"]; ?></td>
+          <td><?php echo $row["reason_for_appointment"]; ?></td>
+          <td><?php echo $row["appointment_date"]; ?></td>
+          <td><?php echo $row["appointment_time"]; ?></td>
+          <td><?php echo $row["created_at"]; ?></td>
+          <td><?php echo $row["status"]; ?></td>
+
+              <form action="db.connection.php" method="get">
                 <button style="background-color: #006400; color: white;"><a href="https://meet.google.com/rpf-twyy-mce" target="_blank" style="text-decoration: none; color: inherit;">Attend</a></button>
                 <button type="submit" name="attend" style="background-color: #0d452f; color:white;padding:10px; margin-bottom:20px;">Attended</button>
               </form>

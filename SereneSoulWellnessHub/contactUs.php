@@ -90,7 +90,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="Logo.png" alt="SereneSoul Wellness Hub Logo">
+            <img src="logo.png" alt="SereneSoul Wellness Hub Logo">
         </div>
     </header>
     <main>

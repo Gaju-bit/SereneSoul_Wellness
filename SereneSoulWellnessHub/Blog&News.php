@@ -95,7 +95,7 @@ include "connection.php";
 
 <body>
   <div class="header">
-    <img class="logo" src="Images/logo.jpg" alt="Logo">
+    <img class="logo" src="logo.png" alt="Logo">
     <div class="navigation">
       <a href="Index.php"> Home</a>
       <a href="AboutUs.php">About Us</a>
@@ -108,7 +108,7 @@ include "connection.php";
   <div class="blog-container">
     <?php
 
-      $sql = "SELECT Title, Content, DoctorName, PublishDate FROM newsandblog";
+      $sql = "SELECT Title, Content, Author, PublishDate FROM news_blog";
       $result = $conn->query($sql);
     // Loop through each row of the result set
     while ($row = $result->fetch_assoc()) {
@@ -116,7 +116,7 @@ include "connection.php";
       <div class="blog-post">
         <h2><?php echo $row['Title']; ?></h2>
         <p><?php echo $row['Content']; ?></p>
-        <p class="author">By <?php echo $row['DoctorName']; ?></p>
+        <p class="author">By <?php echo $row['Author']; ?></p>
         <p class="date">Published on <?php echo $row['PublishDate']; ?></p>
       </div>
     <?php

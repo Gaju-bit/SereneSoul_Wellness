@@ -5,6 +5,8 @@ session_start();
 // Include the database connection file
 require_once "db_connection.php";
 
+echo 800;
+
 // Initialize error message variable
 $errorMsg = '';
 
