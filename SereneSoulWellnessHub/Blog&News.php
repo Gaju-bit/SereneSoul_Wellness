@@ -1,7 +1,3 @@
-<?php
-include "connection.php";
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +11,6 @@ include "connection.php";
       font-family: Arial, sans-serif;
       margin-top: 20px;
       background-color: #dedab6;
-      
     }
 
     .header {
@@ -106,29 +101,35 @@ include "connection.php";
   </div>
 
   <div class="blog-container">
-    <?php
-
-      $sql = "SELECT Title, Content, Author, PublishDate FROM news_blog";
-      $result = $conn->query($sql);
-    // Loop through each row of the result set
-    while ($row = $result->fetch_assoc()) {
-    ?>
-      <div class="blog-post">
-        <h2><?php echo $row['Title']; ?></h2>
-        <p><?php echo $row['Content']; ?></p>
-        <p class="author">By <?php echo $row['Author']; ?></p>
-        <p class="date">Published on <?php echo $row['PublishDate']; ?></p>
-      </div>
-    <?php
-    }
-    ?>
+    <div class="blog-post">
+      <h2>5 Ways to Improve Your Mental Wellness</h2>
+      <p>It's essential to prioritize mental wellness in our daily lives. Here are five simple yet effective ways to
+        enhance your mental well-being:</p>
+      <ol>
+        <li>Practice mindfulness meditation daily</li>
+        <li>Engage in regular physical exercise</li>
+        <li>Connect with loved ones and friends</li>
+        <li>Limit screen time and take digital detox breaks</li>
+        <li>Seek professional help if needed</li>
+      </ol>
+      <p class="author">Published by SereneSoul Wellness Hub</p>
+      <p class="date">Published on April 11, 2024</p>
+    </div>
+    <div class="blog-post">
+      <h2>The Importance of Sleep for Overall Wellness</h2>
+      <p>Sleep plays a crucial role in maintaining overall wellness. Adequate and quality sleep contributes to physical,
+        mental, and emotional well-being. Here's why sleep is essential:</p>
+      <ul>
+        <li>Restores energy levels and enhances productivity</li>
+        <li>Supports immune function and aids in healing and repair</li>
+        <li>Regulates mood and reduces stress</li>
+        <li>Improves cognitive function and memory</li>
+        <li>Enhances creativity and problem-solving abilities</li>
+      </ul>
+      <p class="author">Published by SereneSoul Wellness Hub</p>
+      <p class="date">Published on April 12, 2024</p>
+    </div>
   </div>
 </body>
 
 </html>
-
-<?php
-// Close result set and connection
-$result->close();
-$conn->close();
-?>

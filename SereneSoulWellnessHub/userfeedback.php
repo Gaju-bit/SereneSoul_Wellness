@@ -101,9 +101,8 @@
     </div>
     <a href="professional_dash.php"><i class="fas fa-home"></i> Overview</a>
     <a href="manageappointment.php"><i class="fas fa-calendar-alt"></i> Manage Appointments</a>
-    <a href="Patients_to_attend.php"><i class="fas fa-user-md"></i> Patients to Attend</a>
     <a class="active" href="userfeedback.php"><i class="fas fa-comment-dots"></i> User Feedback</a>
-    <a href="profiledoctor.php"><i class="fas fa-user-edit"></i> Edit my profile</a>
+    <a href="myprofile.php"><i class="fas fa-user-edit"></i> Edit my profile</a>
     <a href="Blog&News.php"><i class="fas fa-newspaper"></i> News and Blog</a>
     <a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
   </div>

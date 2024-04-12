@@ -362,6 +362,7 @@
         <a class="active" href="provider_dashboard.php"><i class="fas fa-home"></i> Overview</a>
         <li><a href="bookappointment.php"><i class="fas fa-calendar-alt"></i> Book Appointments</a></li>
         <li><a href="chatbox.php"><i class="fas fa-user-md"></i> Community Chat</a></li>
+        <li><a href="wellness_assess.php"><i class="fas fa-user-md"></i> Personalized Wellness Assessment</a></li>
         <li><a href="Feedbacksupport.php"><i class="fas fa-comment-dots"></i> User Feedback</a></li>
         <li><a href="myprofile.php"><i class="fas fa-user-edit"></i> Edit My Profile</a></li>
         <li><a href="Blog&News.php"><i class="fas fa-newspaper"></i> News and Blog</a></li>

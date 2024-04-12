@@ -370,10 +370,9 @@
         </div>
         <a class="active" href="professional_dash.php"><i class="fas fa-home"></i> Overview</a>
         <li><a href="manageappointment.php"><i class="fas fa-calendar-alt"></i> Manage Appointments</a></li>
-        <li><a href="patients_to_attend.php"><i class="fas fa-user-md"></i> Patients to Attend</a></li>
         <li><a href="userfeedback.php"><i class="fas fa-comment-dots"></i> Patient Feedback</a></li>
-        <li><a href="my_profile.php"><i class="fas fa-user-edit"></i> Edit my profile</a></li>
-        <li><a href="Blog&News.php"><i class="fas fa-newspaper"></i> News and Blog</a></li>
+        <li><a href="myprofile.php"><i class="fas fa-user-edit"></i> Edit my profile</a></li>
+        <li><a href="Blog&Newsview.php"><i class="fas fa-newspaper"></i> News and Blog</a></li>
         <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
     </div>
 
@@ -393,22 +392,22 @@
             <h2><a href="#">Report Overview</a></h2>
             <div class="card">
                 <h3>Upcoming Appointments</h3>
-                <p>3</p>
+                <p><a href="view_appointments.php">3</a></p>
             </div>
             <div class="card">
                 <h3>Cancelled Appointments</h3>
-                <p>2</p>
+                <p><a href="view_appointments.php">2</a></p>
             </div>
             <div class="card">
                 <h3>Wellness Assessments</h3>
-                <p>7</p>
+                <p><a href="view_assessments.php">7</a></p>
             </div>
             <div class="card">
-                <h3>Community Messages</h3>
-                <p>500</p>
+                <h3>Community Chat</h3>
+                <p><a href="chatbox.php">500</a></p>
             </div>
-        </div>
-        
+      </div>
+
         <div class="appointment-activity">
             <h2><a href="#">Appointment Activity</a></h2>
             <table>

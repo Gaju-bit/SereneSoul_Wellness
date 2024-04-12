@@ -1,8 +1,9 @@
 <?php
 
-// Check if form is submitted
+// Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    
+    // Include the database connection file
+    include_once "db_connection.php";
     // Initialize an empty array to store validation errors
     $errors = [];
 
