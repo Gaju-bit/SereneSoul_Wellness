@@ -94,8 +94,17 @@ CREATE TABLE feedback (
 CREATE TABLE wellness_assessments (
     assessment_id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
-    assessment_date DATE NOT NULL,
-    -- Include additional assessment fields here as needed
+    assessment_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    energy_levels INT NOT NULL,
+    sleep_hours INT NOT NULL,
+    fruit_veggie_servings INT NOT NULL,
+    exercise_frequency VARCHAR(20) NOT NULL,
+    stress_levels INT NOT NULL,
+    health_concerns TEXT NOT NULL,
+    relaxation_techniques VARCHAR(20) NOT NULL,
+    current_diet TEXT NOT NULL,
+    digestive_issues VARCHAR(20) NOT NULL,
+    wellness_goals TEXT NOT NULL,
     FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
 
